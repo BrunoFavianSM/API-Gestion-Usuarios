@@ -21,6 +21,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Usuario',
+    tableName: 'usuarios', // Especificar el nombre de la tabla en la BD
+    timestamps: true // Asegurar que use createdAt y updatedAt
   });
   return Usuario;
 };
